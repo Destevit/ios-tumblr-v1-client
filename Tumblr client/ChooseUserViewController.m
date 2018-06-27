@@ -28,7 +28,7 @@
 	[self.view addSubview:_chooseUserView];
 	[[_chooseUserView.leftAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.leftAnchor] setActive:YES];
 	[[_chooseUserView.rightAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.rightAnchor] setActive:YES];
-	[[_chooseUserView.centerYAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.centerYAnchor] setActive:YES];
+	[[_chooseUserView.centerYAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.centerYAnchor constant:-100] setActive:YES];
 
 	[_chooseUserView.button addTarget:self action:@selector(didTouchUp:) forControlEvents:UIControlEventTouchUpInside];
 }
